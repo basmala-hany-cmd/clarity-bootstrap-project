@@ -1,0 +1,104 @@
+:root {
+  --bg-dark-navy: #0b0f19;
+  --bg-card-navy: #131a2b;
+  --bg-section-alt: #0f1626;
+  --accent-indigo: #6366f1;
+  --accent-indigo-hover: #4f46e5;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-dark-navy);
+  color: #ffffff;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar-custom {
+  background-color: rgba(11, 15, 25, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+/* Buttons & Accents */
+.btn-indigo {
+  background-color: var(--accent-indigo);
+  border-color: var(--accent-indigo);
+  color: #ffffff;
+}
+
+.btn-indigo:hover,
+.btn-indigo:focus {
+  background-color: var(--accent-indigo-hover);
+  border-color: var(--accent-indigo-hover);
+  color: #ffffff;
+}
+
+.text-indigo {
+  color: var(--accent-indigo);
+}
+
+.bg-section-alt {
+  background-color: var(--bg-section-alt);
+}
+
+.bg-card-custom {
+  background-color: var(--bg-card-navy);
+  border: 1px solid var(--border-subtle);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.bg-card-custom:hover {
+  transform: translateY(-4px);
+  border-color: rgba(99, 102, 241, 0.5);
+}
+
+.section-padding {
+  padding: 4.5rem 0;
+}
+
+.hero-glow {
+  background: radial-gradient(circle at 75% 40%, rgba(99, 102, 241, 0.22), transparent 55%);
+}
+
+/* Portfolio & Team Images */
+.portfolio-img {
+  height: 210px;
+  object-fit: cover;
+}
+
+.team-avatar {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+}
+
+/* Form Inputs on Dark Background */
+.form-control-dark,
+.form-select-dark {
+  background-color: #0b0f19;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+}
+
+.form-control-dark:focus,
+.form-select-dark:focus {
+  background-color: #0b0f19;
+  border-color: var(--accent-indigo);
+  color: #ffffff;
+  box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.25);
+}
+
+.form-control-dark::placeholder {
+  color: #94a3b8;
+}
+
+.footer-custom {
+  background-color: #070a12;
+  border-top: 1px solid var(--border-subtle);
+}
